@@ -14,8 +14,8 @@ import os
 
 plt.style.use('default')
 
-st.set_page_config(page_title="JAKIM FTIR Halal Authentication Platform", layout="wide")
-st.title("JAKIM FTIR Halal Authentication Platform")
+st.set_page_config(page_title="Predictive Osteoarthritis Diagnostics Platform", layout="wide")
+st.title("Predictive Osteoarthritis Diagnostics Platform")
 st.caption("Upload a CSV with columns SampleID, Class and spectral variables such as 4000 to 400 cm⁻¹")
 
 uploaded_file = st.file_uploader("Upload your FTIR dataset CSV only", type=["csv"])
@@ -333,3 +333,4 @@ if test_file is not None:
     st.dataframe(out_df, use_container_width=True)
     st.download_button("Download predictions CSV", out_df.to_csv(index=False).encode("utf-8"),
                        file_name="external_predictions_plsda.csv", mime="text/csv")
+
